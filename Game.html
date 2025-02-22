@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Match Game</title>
+    <link rel="stylesheet" href="./MemoryGameStyle.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <!-- NavBar -->
+   <header>
+    <div class="logo">UNITY</div>
+    <br>
+    <div class="marquee">Welcome to the Memory Match Game! Play and have fun!</div>
+    <!-- <marquee class="marquee">Welcome to the Memory Match Game! Challenge yourself and have fun!</marquee> -->
+     <br><br>
+    <button class="homeButton" onclick="window.location.href='./index.html'">Home</button>
+  </header>
+
+   <!-- Game Section -->
+   <section id="gameBox">
+    <main id="head">
+      <button id="startButton">Start</button>
+       <div class="timeScore">
+        <div class="timer" id="timer">Time left : <span id="time-left" >60</span> sec</div>
+        <div id="score">Score: <span id="totalScore">0</span></div>
+       </div>
+    </main>
+    <div class="game-container" id="game-board"></div>
+   </section>
+
+   <!--Popup Message Box At End Game -->
+<div id="endGamePopup" class="popup" style="display: none;">
+  <div class="popup-content">
+      <h2 id="popupMessage"></h2>
+      <p id="popupScore"></p>
+      <img id="popupImage" alt="Result Image" /><br>
+      <button onclick="closePopup()">Close</button>
+  </div>
+</div>
+
+  <!-- Footer Section -->
+  <footer id="game-footer">
+    <p>2025  All Rights Reserved. Created by vamshi Krishna. </p>
+  </footer>
+    <script src="./GameOperations.js"></script>
+</body>
+</html>

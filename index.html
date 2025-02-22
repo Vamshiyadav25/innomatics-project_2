@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Match Game</title>
+    <link rel="stylesheet" href="./MemoryGameStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+   
+</head>
+
+<body>
+
+  <nav><p class="header">GameLoft Corporation...</p></nav>
+  <!-- Banner Section -->
+  <section class="about-game" id="about-game">
+    <div id="Banner1">
+      
+        <h1>Memory Match Game</h1>
+       
+        <button class="playButton" onclick="showGrid()">Start</button>
+    </div>
+  </section>
+
+
+  <!-- Grid Section -->
+  <section id="category-section">
+    <h1 id="category">Select Category</h1>
+   <!--Fruits-->
+  <section class="grid-container" id="category-selection">
+    <div class="grid-item" onclick="navigateToGame('fruits')">
+      <img src="./Images/Fruits.png" alt="Fruits">
+      <p>Fruits</p>
+      <button class="grid-play" >Play</button>
+    </div>
+
+    <!--animals-->
+   
+    <div class="grid-item" onclick="navigateToGame('animals')">
+      <img src="./Images/Animals.jpg" alt="Animals">
+      <p>Animals</p>
+      <button class="grid-play">Play</button>
+    </div>
+    
+    <!--Flags-->
+    <div class="grid-item" onclick="navigateToGame('flags')">
+      <img src="./Images/Flags.png" alt="Flags">
+      <p>Flags</p>
+      <button class="grid-play">Play</button>
+    </div>
+    <!--Vegetables-->
+    <div class="grid-item" onclick="navigateToGame('vegetables')">
+      <img src="./Images/Vegetables.jpg" alt="Vegetables">
+      <p>Vegetables</p>
+      <button class="grid-play">Play</button>
+    </div>
+    <!--Flowers-->
+    <div class="grid-item" onclick="navigateToGame('flowers')">
+      <img src="./Images/Flowers.jpg" alt="Flowers">
+      <p>Flowers</p>
+      <button class="grid-play">Play</button>
+    </div>
+    
+    
+  </section>
+</section>
+
+ 
+  <!-- Footer Section -->
+<footer id="game-footer">
+  <p>2025  All Rights Reserved. Created by Vamshi Krishna. </p>
+</footer>
+
+  <script src="./GameOperations.js"></script>
+</body>
+</html>
